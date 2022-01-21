@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "ru.sal4i"
-version = "0.6"
+version = "0.6.1"
 
 repositories {
     mavenCentral()
