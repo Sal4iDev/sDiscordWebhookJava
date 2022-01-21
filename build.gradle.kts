@@ -1,10 +1,10 @@
 plugins {
     java
-    `maven-publish`
+//    `maven-publish`
 }
 
 group = "ru.sal4i"
-version = "0.5"
+version = "0.6"
 
 repositories {
     mavenCentral()
@@ -19,14 +19,14 @@ tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
 
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            groupId = "com.github.Sal4iDev"
-            artifactId = "sDiscordWebhookJava"
-            version = "0.5"
-
-            from(components["java"])
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("maven") {
+//            groupId = "com.github.Sal4iDev"
+//            artifactId = "sDiscordWebhookJava"
+//            version = "0.5"
+//
+//            from(components["java"])
+//        }
+//    }
+//}
