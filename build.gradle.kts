@@ -1,10 +1,9 @@
 plugins {
     java
-    `maven-publish`
 }
 
 group = "com.github.Sal4iDev"
-version = "0.2"
+version = "0.3"
 
 repositories {
     mavenCentral()
