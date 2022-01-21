@@ -3,8 +3,8 @@ plugins {
     `maven-publish`
 }
 
-group = "com.github.Sal4iDev"
-version = "0.4"
+group = "ru.sal4i"
+version = "0.5"
 
 repositories {
     mavenCentral()
@@ -23,8 +23,8 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             groupId = "com.github.Sal4iDev"
-            artifactId = "sDiscordWebhook"
-            version = "0.4"
+            artifactId = "sDiscordWebhookJava"
+            version = "0.5"
 
             from(components["java"])
         }
