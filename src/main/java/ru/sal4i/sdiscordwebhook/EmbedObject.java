@@ -1,9 +1,7 @@
 package ru.sal4i.sdiscordwebhook;
 
-import ru.sal4i.sdiscordwebhook.embed.Image;
 import ru.sal4i.sdiscordwebhook.embed.*;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +13,7 @@ public class EmbedObject {
     private String title;
     private String description;
     private String url;
-    private Color color;
+    private EmbedColor color;
     private Footer footer;
     private Thumbnail thumbnail;
     private Image image;
@@ -39,14 +37,14 @@ public class EmbedObject {
         this.url = url;
     }
 
-    public EmbedObject(String title, String description, String url, Color color) {
+    public EmbedObject(String title, String description, String url, EmbedColor color) {
         this.title = title;
         this.description = description;
         this.url = url;
         this.color = color;
     }
 
-    public EmbedObject(String title, String description, String url, Color color, Footer footer) {
+    public EmbedObject(String title, String description, String url, EmbedColor color, Footer footer) {
         this.title = title;
         this.description = description;
         this.url = url;
@@ -54,7 +52,7 @@ public class EmbedObject {
         this.footer = footer;
     }
 
-    public EmbedObject(String title, String description, String url, Color color, Footer footer, Thumbnail thumbnail) {
+    public EmbedObject(String title, String description, String url, EmbedColor color, Footer footer, Thumbnail thumbnail) {
         this.title = title;
         this.description = description;
         this.url = url;
@@ -63,7 +61,7 @@ public class EmbedObject {
         this.thumbnail = thumbnail;
     }
 
-    public EmbedObject(String title, String description, String url, Color color, Footer footer, Thumbnail thumbnail, Image image) {
+    public EmbedObject(String title, String description, String url, EmbedColor color, Footer footer, Thumbnail thumbnail, Image image) {
         this.title = title;
         this.description = description;
         this.url = url;
@@ -73,7 +71,7 @@ public class EmbedObject {
         this.image = image;
     }
 
-    public EmbedObject(String title, String description, String url, Color color, Footer footer, Thumbnail thumbnail, Image image, Author author) {
+    public EmbedObject(String title, String description, String url, EmbedColor color, Footer footer, Thumbnail thumbnail, Image image, Author author) {
         this.title = title;
         this.description = description;
         this.url = url;
@@ -135,15 +133,15 @@ public class EmbedObject {
     /**
      * @return Embed color
      */
-    public Color getColor() {
+    public EmbedColor getColor() {
         return color;
     }
 
     /**
      * @param color new color
-     * @return this EmbedObject with new Color
+     * @return this EmbedObject with new EmbedColor
      */
-    public EmbedObject setColor(Color color) {
+    public EmbedObject setColor(EmbedColor color) {
         this.color = color;
         return this;
     }

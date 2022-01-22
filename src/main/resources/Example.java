@@ -1,7 +1,7 @@
+import ru.sal4i.sdiscordwebhook.EmbedColor;
 import ru.sal4i.sdiscordwebhook.EmbedObject;
 import ru.sal4i.sdiscordwebhook.SDiscordWebhook;
 
-import java.awt.*;
 import java.io.IOException;
 
 public class Example {
@@ -13,11 +13,11 @@ public class Example {
         webhook.addEmbed(new EmbedObject()
                 .setTitle("My Title!")
                 .setDescription("My Description!")
-                .setColor(Color.RED)
+                .setColor(EmbedColor.RED)
                 .addField("This is a Field name", "This is a Field value", true)
                 .addField("This is a 2 Field", "__Hello, World!__", true)
         );
-        webhook.addEmbed(new EmbedObject("Some Title", null, null, Color.pink)
+        webhook.addEmbed(new EmbedObject("Some Title", null, null, EmbedColor.pink)
                 .addField("Some Field Name", "Some Field Value", false)
         );
 

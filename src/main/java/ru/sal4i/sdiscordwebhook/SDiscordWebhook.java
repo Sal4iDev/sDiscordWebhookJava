@@ -1,15 +1,12 @@
 package ru.sal4i.sdiscordwebhook;
 
-import ru.sal4i.sdiscordwebhook.embed.Image;
 import ru.sal4i.sdiscordwebhook.embed.*;
 
 import javax.net.ssl.HttpsURLConnection;
-import java.awt.*;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.lang.reflect.Array;
 import java.net.URL;
-import java.util.List;
 import java.util.*;
 
 @SuppressWarnings("unused")
@@ -64,12 +61,12 @@ public class SDiscordWebhook {
                 jsonEmbed.put("url", embed.getUrl());
 
                 if (embed.getColor() != null) {
-                    Color color = embed.getColor();
-                    int rgb = color.getRed();
-                    rgb = (rgb << 8) + color.getGreen();
-                    rgb = (rgb << 8) + color.getBlue();
+                    EmbedColor embedColor = embed.getColor();
+                    int rgb = embedColor.getRed();
+                    rgb = (rgb << 8) + embedColor.getGreen();
+                    rgb = (rgb << 8) + embedColor.getBlue();
 
-                    jsonEmbed.put("color", rgb);
+                    jsonEmbed.put("embedColor", rgb);
                 }
 
                 Footer footer = embed.getFooter();
