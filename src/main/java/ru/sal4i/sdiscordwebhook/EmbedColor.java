@@ -6,7 +6,6 @@ import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.ColorModel;
 import java.beans.ConstructorProperties;
-import java.io.Serial;
 
 /**
  * The {@code EmbedColor} class is used to encapsulate colors in the default
@@ -195,7 +194,6 @@ public class EmbedColor implements Paint, java.io.Serializable {
     /*
      * JDK 1.1 serialVersionUID
      */
-    @Serial
     private static final long serialVersionUID = 118526816881161077L;
     private static final double FACTOR = 0.7;
     /**
