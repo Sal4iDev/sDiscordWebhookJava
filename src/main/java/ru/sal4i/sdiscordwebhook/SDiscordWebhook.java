@@ -66,7 +66,7 @@ public class SDiscordWebhook {
                     rgb = (rgb << 8) + embedColor.getGreen();
                     rgb = (rgb << 8) + embedColor.getBlue();
 
-                    jsonEmbed.put("embedColor", rgb);
+                    jsonEmbed.put("color", rgb);
                 }
 
                 Footer footer = embed.getFooter();
