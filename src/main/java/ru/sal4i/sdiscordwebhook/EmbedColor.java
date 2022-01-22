@@ -34,6 +34,13 @@ import java.beans.ConstructorProperties;
  * @see AlphaComposite
  */
 @SuppressWarnings("unused")
+
+/*
+ This class is almost a full copy of java.awt.Color
+ I had to do this because this API is more for VisualBukkit
+ And there, there is no difference between org.bukkit.Color and java.awt.Color
+ Sorry for the inconvenience!
+*/
 public class EmbedColor implements Paint, java.io.Serializable {
 
     /**
@@ -308,8 +315,7 @@ public class EmbedColor implements Paint, java.io.Serializable {
         value = ((a & 0xFF) << 24) |
                 ((r & 0xFF) << 16) |
                 ((g & 0xFF) << 8) |
-//                ((b & 0xFF) << 0);
-                ((b & 0xFF)); // sal4idev
+                ((b & 0xFF) << 0);
         testColorValueRange(r, g, b, a);
     }
 
@@ -1201,42 +1207,16 @@ public class EmbedColor implements Paint, java.io.Serializable {
         return cs;
     }
 
-    //    /**
-//     * Creates and returns a {@link PaintContext} used to
-//     * generate a solid color field pattern.
-//     * See the {@link Paint#createContext specification} of the
-//     * method in the {@link Paint} interface for information
-//     * on null parameter handling.
-//     *
-//     * @param cm    the preferred {@link ColorModel} which represents the most convenient
-//     *              format for the caller to receive the pixel data, or {@code null}
-//     *              if there is no preference.
-//     * @param r     the device space bounding box
-//     *              of the graphics primitive being rendered.
-//     * @param r2d   the user space bounding box
-//     *              of the graphics primitive being rendered.
-//     * @param xform the {@link AffineTransform} from user
-//     *              space into device space.
-//     * @param hints the set of hints that the context object can use to
-//     *              choose between rendering alternatives.
-//     * @return the {@code PaintContext} for
-//     * generating color patterns.
-//     * @see Paint
-//     * @see PaintContext
-//     * @see ColorModel
-//     * @see Rectangle
-//     * @see Rectangle2D
-//     * @see AffineTransform
-//     * @see RenderingHints
-//     */
+    // Sal4iDev start.
     public synchronized PaintContext createContext(ColorModel cm, Rectangle r,
                                                    Rectangle2D r2d,
                                                    AffineTransform xform,
                                                    RenderingHints hints) {
 //        return new java.awt.ColorPaintContext(getRGB(), cm);
-        return null;
+        return null; // Sal4iDev
     }
 
+    // Sal4iDev end.
 
     /**
      * Returns the transparency mode for this {@code EmbedColor}.  This is
@@ -1259,3 +1239,10 @@ public class EmbedColor implements Paint, java.io.Serializable {
     }
 
 }
+
+/*
+ This class is almost a full copy of java.awt.Color
+ I had to do this because this API is more for VisualBukkit
+ And there, there is no difference between org.bukkit.Color and java.awt.Color
+ Sorry for the inconvenience!
+*/
