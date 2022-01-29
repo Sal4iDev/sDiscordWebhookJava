@@ -13,15 +13,7 @@ public class Thumbnail {
     /**
      * @return Thumbnail URL
      */
-
     public String getUrl() {
         return url;
     }
-
-    @Override
-    public String toString() {
-        return "Thumbnail[" +
-                "url=" + url + ']';
-    }
-
 }

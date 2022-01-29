@@ -17,7 +17,6 @@ public class Author {
     /**
      * @return Author name
      */
-
     public String getName() {
         return name;
     }
@@ -25,7 +24,6 @@ public class Author {
     /**
      * @return Author URL
      */
-
     public String getUrl() {
         return url;
     }
@@ -33,17 +31,8 @@ public class Author {
     /**
      * @return Author icon URL
      */
-
     public String getIconUrl() {
         return iconUrl;
-    }
-
-    @Override
-    public String toString() {
-        return "Author[" +
-                "name=" + name + ", " +
-                "url=" + url + ", " +
-                "iconUrl=" + iconUrl + ']';
     }
 
 }

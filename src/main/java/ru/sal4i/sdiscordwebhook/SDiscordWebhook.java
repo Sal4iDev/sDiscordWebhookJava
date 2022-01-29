@@ -28,6 +28,33 @@ public class SDiscordWebhook {
         this.url = url;
     }
 
+    public SDiscordWebhook(String url, String content) {
+        this.url = url;
+        this.content = content;
+    }
+
+    public SDiscordWebhook(String url, String content, String username) {
+        this.url = url;
+        this.content = content;
+        this.username = username;
+    }
+
+    public SDiscordWebhook(String url, String content, String username, String avatarUrl) {
+        this.url = url;
+        this.content = content;
+        this.username = username;
+        this.avatarUrl = avatarUrl;
+    }
+
+    public SDiscordWebhook(String url, String content, String username, String avatarUrl, boolean tts) {
+        this.url = url;
+        this.content = content;
+        this.username = username;
+        this.avatarUrl = avatarUrl;
+        this.tts = tts;
+    }
+
+
     /**
      * Adds an embed to the message
      *
@@ -208,18 +235,6 @@ public class SDiscordWebhook {
      */
     public void setTts(boolean tts) {
         this.tts = tts;
-    }
-
-    @Override
-    public String toString() {
-        return "SDiscordWebhook{" +
-                "url='" + url + '\'' +
-                ", embeds=" + embeds +
-                ", content='" + content + '\'' +
-                ", username='" + username + '\'' +
-                ", avatarUrl='" + avatarUrl + '\'' +
-                ", tts=" + tts +
-                '}';
     }
 
     private static class JSONObject {

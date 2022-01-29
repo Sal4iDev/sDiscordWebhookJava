@@ -17,7 +17,6 @@ public class Field {
     /**
      * @return Field name
      */
-
     public String getName() {
         return name;
     }
@@ -25,7 +24,6 @@ public class Field {
     /**
      * @return Field value
      */
-
     public String getValue() {
         return value;
     }
@@ -33,16 +31,7 @@ public class Field {
     /**
      * @return Is Field inline?
      */
-
     public boolean isInline() {
         return inline;
-    }
-
-    @Override
-    public String toString() {
-        return "Field[" +
-                "name=" + name + ", " +
-                "value=" + value + ", " +
-                "inline=" + inline + ']';
     }
 }

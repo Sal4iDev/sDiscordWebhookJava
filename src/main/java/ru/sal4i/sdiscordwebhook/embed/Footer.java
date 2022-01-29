@@ -15,7 +15,6 @@ public class Footer {
     /**
      * @return Footer text
      */
-
     public String getText() {
         return text;
     }
@@ -23,16 +22,7 @@ public class Footer {
     /**
      * @return Footer icon URL
      */
-
     public String getIconUrl() {
         return iconUrl;
     }
-
-    @Override
-    public String toString() {
-        return "Footer[" +
-                "text=" + text + ", " +
-                "iconUrl=" + iconUrl + ']';
-    }
-
 }

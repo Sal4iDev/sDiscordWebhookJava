@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "ru.sal4i"
-version = "1.1"
+version = "1.2"
 
 repositories {
     mavenCentral()
@@ -24,7 +24,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "com.github.Sal4iDev"
             artifactId = "sDiscordWebhookJava"
-            version = "1.1"
+            version = "1.2"
 
             from(components["java"])
         }

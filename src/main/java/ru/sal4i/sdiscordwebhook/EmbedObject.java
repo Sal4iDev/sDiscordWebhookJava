@@ -225,19 +225,4 @@ public class EmbedObject {
         return this;
     }
 
-    @Override
-    public String toString() {
-        return "EmbedObject{" +
-                "fields=" + fields +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", url='" + url + '\'' +
-                ", color=" + color +
-                ", footer=" + footer +
-                ", thumbnail=" + thumbnail +
-                ", image=" + image +
-                ", author=" + author +
-                '}';
-    }
-
 }

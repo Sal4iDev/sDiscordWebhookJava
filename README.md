@@ -1,5 +1,7 @@
 # sDiscordWebhook Java
+
 [Example](https://github.com/Sal4iDev/sDiscordWebhookJava/blob/main/src/main/resources/Example.java)
+
 #### _Replace [Tag] with the last release tag_
 
 ### Gradle:
