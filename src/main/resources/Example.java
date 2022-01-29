@@ -17,7 +17,7 @@ public class Example {
                 .addField("This is a Field name", "This is a Field value", true)
                 .addField("This is a 2 Field", "__Hello, World!__", true)
         );
-        webhook.addEmbed(new EmbedObject("Some Title", null, null, EmbedColor.pink)
+        webhook.addEmbed(new EmbedObject("Some Title", null, null, EmbedColor.PINK)
                 .addField("Some Field Name", "Some Field Value", false)
         );
 
